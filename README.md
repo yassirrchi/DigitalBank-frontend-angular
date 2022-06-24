@@ -136,4 +136,17 @@ service/account.service.ts
  ## ---------------------------------------------------------------------------------
 ## Transfer
 
+![VID-20220624-190810-4](https://user-images.githubusercontent.com/65183563/175719293-ca7fc305-37bb-415d-aaf4-4bb6e1517b73.gif)
+
+accounts/accounts.component.html
+
+![27](https://user-images.githubusercontent.com/65183563/175719480-7bbadf1f-f1cf-496d-96b1-0cd17663a2c4.PNG)
+
+accounts/accounts.component.ts
+
+![28](https://user-images.githubusercontent.com/65183563/175719559-a144b6e5-9d28-4c9b-8b27-cc551866b7e9.PNG)
+
+service/account.service.ts
+
+![29](https://user-images.githubusercontent.com/65183563/175719658-d1aa3dfd-972c-4af0-ac51-472a50e75f72.PNG)
 
