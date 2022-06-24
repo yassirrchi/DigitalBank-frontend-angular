@@ -1,0 +1,28 @@
+<div class="container">
+
+     
+     <div class="container">
+        <div>Comptes de Mr/mme {{customer.name}}</div>
+         
+
+     </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Email</th><th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bacc of this.temp  ">
+                <td>{{bacc.id}}</td>
+                <td>{{bacc.createdAt}}</td>
+                <td>{{bacc.balance}}</td>
+                <td *ngIf="bacc.overDraft">Current Account</td>
+                <td *ngIf="bacc.interestRate">Saving Account</td>
+                 
+
+            </tr>
+        </tbody>
+
+    </table>
+</div>

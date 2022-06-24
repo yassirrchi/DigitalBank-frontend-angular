@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { catchError, Observable, throwError } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Customer } from '../models/Customer';
 import { CustomerService } from '../services/customer.service';
 
@@ -16,7 +18,7 @@ export class CustomersComponent implements OnInit {
   searchformGroup!:FormGroup  ;
   
 
-  constructor(private servc:CustomerService,private fb:FormBuilder) { }
+  constructor(private servc:CustomerService,private fb:FormBuilder,private router :Router) { }
 
   
 
@@ -54,6 +56,10 @@ export class CustomersComponent implements OnInit {
       }
     });
 
+  }
+  handleCustomerAccounts( customer:Customer){
+ 
+     this.router.navigateByUrl("/customer-accounts/"+customer.id,{state:customer})
   }
 
 }
